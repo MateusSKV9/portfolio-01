@@ -1,2 +1,2 @@
-# portifolio-01
+# portfolio-01
  Primeiro portifólio
