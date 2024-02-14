@@ -179,6 +179,7 @@ button:hover {
 
 .tecnologias div {
     background-color: whitesmoke;
+    margin: 7px 0px;
 }
 
 .sombra-html:hover {
@@ -224,6 +225,7 @@ h2#projetos {
 .container-redes .social:hover {
     box-shadow: 1px 1px 3px black;
     transform: translate(-2px, -2px);
+    transition: transform 0.15s;
 }
 
 .social img {
@@ -241,7 +243,7 @@ h2#projetos {
 }
 
 .card {
-    background-color: whitesmoke;
+    background-color: rgb(220, 220, 220);
     margin: 10px;
     width: 260px;
     height: 360px;
