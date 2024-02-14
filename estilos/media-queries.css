@@ -16,7 +16,7 @@
     }
 
     .main div.descricao {
-        width: 400px;
+        min-width: 320px;
         font-size: 1em;
         line-height: 1.5em;
     }
