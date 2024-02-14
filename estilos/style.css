@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*--------------- HEADER ---------------*/
+
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    background-color: white;
+}
+
+header h1 {
+    padding: 10px 20px;
+    font-size: 2.5em;
+    font-family: 'Montserrat';
+}
+
+header h1:hover {
+    animation: animate-logo 1s infinite;
+    text-shadow: 3px 3px 3px rgb(0, 76, 0);
+    transform: translate(-3px, -3px);
+}
+
+@keyframes animate-logo {
+    0% {
+        color: rgb(216, 216, 216);
+    }
+    50%, 95%{
+        color: rgb(110, 221, 0);
+    }
+    100%{
+        color: rgb(217, 217, 217);
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-right: 2%;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+nav a:before {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: lawngreen;
+    transition: 0.3s;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/*--------------- MAIN   ---------------*/
+
+div.main {
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img#perfil {
+    width: 300px;
+    margin: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+} 
+
+div.main .descricao {
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.2em;
+}
+
+.descricao h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 0.9em;
+    padding: 7px;
+    color: rgb(0, 60, 0);
+    background-color: lawngreen;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+button:hover {
+    transition: transform 0.2s;
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 3px rgb(98, 163, 0);
+}
+
+#link-externo {
+    width: 15px;
+    padding: 0px 0px 0px 5px;
+}
+
+.contratar {
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.contratar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: lawngreen;
+    color: #ffffff;
+    transition: width 0.5s ease;
+    z-index: -1;
+}
+
+.contratar:hover::before {
+    width: 100%;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px 0px;
+}
+
+.tecnologias div {
+    background-color: whitesmoke;
+}
+
+.sombra-html:hover {
+    box-shadow: 1px 1px 10px 5px orangered;
+    
+}
+
+.sombra-css:hover {
+    box-shadow: 1px 1px 10px 5px blue;
+    
+}
+
+.sombra-html:hover {
+    box-shadow: 1px 1px 10px 5px orangered;
+    
+}
+
+.tecnologias div p {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tecnologias img {
+    margin: 40px;
+    width: 100px;
+}
+
+h2#projetos {
+    text-align: center;
+    margin: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.container-redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.container-redes .social {
+    background-color: white;
+    margin: 7px;
+    margin-top: 2px;
+    padding: 3px 8px;
+    border-radius: 20%;
+}
+
+.container-redes .social:hover {
+    box-shadow: 1px 1px 3px black;
+    transform: translate(-2px, -2px);
+}
+
+.social img {
+    width: 20px;
+}
+
+.cards {
+    display: flex;
+    margin: auto;
+    height: 80vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.615);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.877);
+    margin: 10px;
+    width: 260px;
+    height: 310px;
+    text-align: center;
+    border-radius: 15px 0px;
+}
+
+.card:hover {
+    border: 2px solid rgb(0, 0, 0);
+    transition: transform 0.1s;
+    transform: translate(-4px, -4px);
+}
+
+.card h3 {
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-weight: bold;
+    border-radius: 15px 0px 0px 0px;
+    border-bottom: 2px solid white;
+}
+
+.card .line2 {
+    border-bottom: 2px solid white;
+}
+
+.card img {
+    width: 100%
+}
+
+.em-breve {
+    display: block;
+    margin-top: 30%;
+    color: white;
+}
+
+.card .ling {
+    display: flex;
+    justify-content: center;
+}
+
+.ling p {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#html {
+    background-color: rgba(255, 68, 0, 0.856);
+}
+
+#css {
+    background-color: rgba(0, 0, 255, 0.867);
+}
+
+/* 
+    .projetos {
+        display: none;
+    }
+
+    .projetos:target {
+        display: block;
+        animation: delayAnimation 3s ease forwards;
+    }
+
+    @keyframes delayAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    } 
+*/
+
+/*--------------- FOOTER ---------------*/
+
+    
