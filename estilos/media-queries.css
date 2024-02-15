@@ -14,6 +14,7 @@
     header.container {
         flex-direction: column;
         justify-content: center;
+        background-color: aqua;
     }
 
     header span {
@@ -24,14 +25,14 @@
         padding-bottom: 1px;
         background-color: whitesmoke;
         width: 100%;   
+        margin: 0;
     }
 
     header nav a {
         display: block;
-        border: 1px solid rgb(175, 175, 175);
+        border-bottom: 1px solid rgb(175, 175, 175);
 
         margin: auto;
-
     }
 
     header nav a:hover::before {
@@ -54,9 +55,18 @@
         margin: auto;
     } 
 
-    .container-redes .social {
-        margin-top: 20px;
+    .container-redes {
+        margin-top: 80px;
     }
+
+    .tecnologias div {
+        margin: 5px;
+    }
+
+    .tecnologias img {
+        width: 80px;
+    }
+ 
 }
 
 /* CELULARES */
