@@ -1,12 +1,41 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints 
+-----------------------------
+    Pequenas telas: até 600px
+    Celular: 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Grandes telas: acima de 1200px
+*/  
+
+/* Pequenas telas */
 @media screen and (max-width: 600px) {
     header.container {
+        flex-direction: column;
         justify-content: center;
     }
 
+    header span {
+        cursor: pointer;
+    }
+
     header nav {
-        padding-bottom: 10px;
+        padding-bottom: 1px;
+        background-color: whitesmoke;
+        width: 100%;   
+    }
+
+    header nav a {
+        display: block;
+        border: 1px solid rgb(175, 175, 175);
+
+        margin: auto;
+
+    }
+
+    header nav a:hover::before {
+        width: 0;
     }
 
     div.main {
@@ -30,11 +59,25 @@
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
+/* CELULARES */
+@media screen and (min-width: 600px) and (max-width: 768px) {
     header.container {
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         align-content: center;
+    }
+    
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header nav {
+        padding-top: 5px;
+        font-size: 0.8em;
+    }
+
+    header #burguer {
+        display: none;
     }
 
     img#perfil {
@@ -44,5 +87,22 @@
     div.main .descricao {
         margin: 0;
         padding: 25px;
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+
+}
+
+@media screen and (min-width: 601px) {
+    span#burguer {
+        display: none;
     }
 }
