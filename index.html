@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body class="animar" onresize="mudouTam()">
+<body class="animar" onresize="mudouTam()" onload="menu()">
     <header class="container">
         <h1>Mateus Santos</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -111,7 +111,11 @@
     </main>
 
     <script>
-        itens.style.display = 'none';
+        function menu () {
+            if(window.innerWidth <= 600) {
+                itens.style.display = 'none'
+            }
+        }
 
         function mudouTam () {
             if(window.innerWidth >= 600) {

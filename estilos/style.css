@@ -16,6 +16,7 @@ html, body {
 
 body {
     transform: translateX(-20px);
+    overflow-y: hidden;
 }
 
 .animar {
