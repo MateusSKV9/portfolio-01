@@ -277,7 +277,7 @@ h2#projetos {
 .cards {
     display: flex;
     margin: auto;
-    height: 80vh;
+
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px 10px;
