@@ -6,17 +6,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    overflow-x: hidden;
+
 }
 
 body {
     transform: translateX(-20px);
-    /* overflow-y: hidden; */
+    overflow-x: hidden;
 }
 
 .animar {
