@@ -58,12 +58,19 @@
         margin-top: 80px;
     }
 
-    .tecnologias div {
-        margin: 5px;
+    .tecnologias {
+        flex-direction: column;
     }
 
-    .tecnologias img {
-        width: 80px;
+    .tecnologias div.comentario {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .tecnologias div.imagens {
+        margin: auto;
+        width: 100%;
     }
  
 }

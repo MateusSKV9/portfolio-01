@@ -112,6 +112,7 @@ nav a:before {
 nav a:hover::before {
     width: 100%;
 }
+
 /*--------------- MAIN   ---------------*/
 
 div.main {
@@ -129,16 +130,22 @@ div.main .descricao {
     padding: 30px;
     border-radius: 10px;
     line-height: 1.2em;
+    font-size: 1.2em;
 }
 
 .descricao h1 {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-size: 2.5em;
     font-family: 'Roboto';
 }
 
 .descricao h2 {
     margin-bottom: 3px;
+}
+
+.descricao strong {
+    color: rgb(107, 213, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.693);
 }
 
 button {
@@ -160,9 +167,13 @@ button:hover {
     box-shadow: 3px 3px 3px rgb(98, 163, 0);
 }
 
-#link-externo {
-    width: 15px;
-    padding: 0px 0px 0px 5px;
+button a, span {
+    text-decoration: none;
+}
+
+button img#link-externo {
+    width: 16px;
+    padding: 0px 0px 0px 2px;
 }
 
 .contratar {
@@ -211,44 +222,6 @@ img#perfil {
     }
 }
 
-.tecnologias {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px 0px;
-}
-
-.tecnologias div {
-    background-color: whitesmoke;
-    margin: 7px 0px;
-}
-
-.sombra-html:hover {
-    box-shadow: 1px 1px 10px 5px orangered;
-    
-}
-
-.tecnologias div p {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.tecnologias img {
-    margin: 40px;
-    width: 100px;
-}
-
-h2#projetos {
-    text-align: center;
-    margin: 10px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    border: 2px solid rgb(0, 0, 0);
-}
-
 .container-redes {
     display: flex;
     flex-wrap: wrap;
@@ -274,28 +247,91 @@ h2#projetos {
     width: 25px;
 }
 
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.tecnologias div.comentario {
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    margin: 7px 5px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.tecnologias div.comentario p {
+    text-indent: 5%;
+}
+
+.tecnologias div.imagens {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tecnologias div.imagens div {
+    font-size: 2em;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.imagens i {
+    font-size: 3em;
+}
+
+.tecnologias div.imagens p {
+    font-size: 0.6em;
+    border-radius: 0px 0px 20px 20px;
+    padding: 5px;
+}
+
+.tecnologias img {
+    margin: 20px;
+    margin-bottom: 5px;
+    width: 70px;
+}
+
+h1.secao {
+    text-align: center;
+    margin: 10px;
+    font-size: 2.1em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 .cards {
     display: flex;
     margin: auto;
 
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0px 10px;
     background-color: rgba(255, 255, 255, 0.615);
 }
 
 .card {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(179, 179, 179);
     margin: 10px;
     width: 260px;
-    height: 360px;
+    height: 340px;
     text-align: center;
     border-radius: 15px 0px;
 }
 
 .card:hover {
     border: 2px solid rgb(14, 144, 0);
-    transition: transform 0.1s;
+    transition: transform 0.2s;
     transform: translate(-4px, -4px);
 }
 
@@ -305,11 +341,11 @@ h2#projetos {
     background-color: rgb(34, 172, 0);
     font-weight: bold;
     border-radius: 15px 0px 0px 0px;
-    border-bottom: 2px solid white;
+    
 }
 
 div.imagem {
-    width: 255px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -319,15 +355,9 @@ div.imagem img {
     height: 250px;
 }
 
-.em-breve {
-    display: block;
-    margin-top: 30%;
-    color: white;
-}
-
 .card .ling {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ling p {
@@ -336,16 +366,59 @@ div.imagem img {
     border-radius: 5px;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    display: inline-block;
 }
 
-#html {
-    background-color: rgba(255, 68, 0, 0.856);
+.imagem div {
+    justify-content: space-between;
 }
 
-#css {
-    background-color: rgba(0, 0, 255, 0.867);
+.ling-used {
+    border-radius: 20%;
+    margin: 1px 4px;
+    margin-bottom: 3px;
 }
 
+div.ling-used {
+    margin: 10px;
+}
+
+a.code {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+}
+
+i {
+    font-size: 40px;
+}
+
+i#html:hover {
+    color: #E34F26;
+}
+
+i#css:hover {
+    color: #1572B6;
+}
+
+i#javascript:hover {
+    color: #F7DF1E;
+}
+
+i#java:hover {
+    color: #ff004c;
+}
+
+i#php:hover {
+    color: #4F5D95;
+}
+
+i#c-plus:hover {
+    color: #5d00ff;
+}
 /*--------------- FOOTER ---------------*/
 
     
