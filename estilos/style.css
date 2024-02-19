@@ -269,6 +269,10 @@ img#perfil {
     text-indent: 5%;
 }
 
+bold {
+    color: #ff004c;
+}
+
 .tecnologias div.imagens {
     width: 50vw;
     display: flex;

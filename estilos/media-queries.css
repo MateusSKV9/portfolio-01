@@ -76,7 +76,7 @@
 }
 
 /* CELULARES */
-@media screen and (min-width: 600px) and (max-width: 780px) {
+@media screen and (min-width: 601px) and (max-width: 780px) {
     header.container {
         align-items: center;
         justify-content: space-between;
@@ -92,17 +92,24 @@
         font-size: 12px;
     }
 
+    header nav a {
+        font-size: 1.49em;
+        margin: auto;
+    }
+
     header #burguer {
         display: none;
     }
 
     img#perfil {
-        width: 280px;
+        width: 250px;
     }
 
     div.main .descricao {
         margin: 0;
-        padding: 25px;
+        padding: 19px;
+        font-size: 1em;
+        line-height: 1.5em;
     }
 }
 
