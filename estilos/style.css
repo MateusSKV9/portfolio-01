@@ -338,6 +338,7 @@ div.imagens i {
 
 .card:hover {
     border: 2px solid rgb(14, 144, 0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.505);
     transition: transform 0.2s;
     transform: translate(-4px, -4px);
 }
