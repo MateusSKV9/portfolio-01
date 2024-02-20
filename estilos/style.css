@@ -173,7 +173,7 @@ button a, span {
 }
 
 button img#link-externo {
-    width: 16px;
+    width: 15px;
     padding: 0px 0px 0px 2px;
 }
 
@@ -323,6 +323,7 @@ div.imagens i {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0px 10px;
+    margin-bottom: 10%;
     background-color: rgba(255, 255, 255, 0.615);
 }
 
@@ -426,3 +427,15 @@ i#c-plus:hover {
     color: #5d00ff;
 }
 /*--------------- FOOTER ---------------*/
+/* Estilos para o footer */
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    background-color: #00ff4c;
+    display: inline;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
