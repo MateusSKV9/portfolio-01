@@ -28,7 +28,7 @@
                 <h2>Sou <strong>Web Developer</strong></h2>
                 <p>Olá, é um prazer te-lô(a) por aqui. Meu nome é Mateus Santos e sou programador, com foco em desenvolvimento web. Além de ser apaixonado por aprender e entender tecnologias, também sou estudante de Sistemas de Informação, na UESB - Campus Jequié.</p>
                 <a href="https://www.canva.com/design/DAFa2Qr6kYw/1PsZDrCi_Jp8Q18pxhoAsQ/view?utm_content=DAFa2Qr6kYw&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank"><button>Currículo<img id="link-externo" src="imagens/bx-link-external.svg" alt=""></button></a>
-                <button class="contratar"><span>Contratar</span></button>
+                <a href="https://www.linkedin.com/in/mateus-santos-1a7361246/" target="_blank"><button class="contratar"><span>Contratar</span></button></a>
             </div>
             <div class="container-img"><img id="perfil" src="imagens/mateus-santos.jpg" alt="foto-mateus"></div>
         </div>
@@ -141,31 +141,18 @@
     </main>
     <footer>
         <h1 class="secao" id="contato">Contato</h1>
-        <h2>Em breve</h2>
+        <!-- <h2>Em breve</h2> -->
+
+        <form action="mateussilvanzg@gmail.com" method="post" enctype="text/plain" target="_blank">
+            <div>
+                <input type="text" name="name" id="iname" placeholder="Nome" required>
+                <input type="email" name="email" id="iemail" placeholder="Email" required>
+            </div>
+            <textarea name="msg" id="img" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
     </footer>
 
-    <script>
-        function menu () {
-            if(window.innerWidth <= 600) {
-                itens.style.display = 'none'
-            }
-        }
-
-        function mudouTam () {
-            if(window.innerWidth >= 600) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickMenu () {
-            if(itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

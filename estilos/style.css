@@ -427,16 +427,49 @@ i#php:hover {
 i#c-plus:hover {
     color: #5d00ff;
 }
+
 /*--------------- FOOTER ---------------*/
-/* Estilos para o footer */
+
 footer {
     text-align: center;
+    background-color: rgba(194, 194, 194, 0.6); 
 }
 
-footer h2 {
+/* footer h2 {
     background-color: #00ff4c;
     display: inline;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
+} */
+
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+form div {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+form input, textarea {
+    border: 2px solid #008e2b;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    background-color: #3c3c3c;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff4c;
+    color: black;
+    transition-duration: 0.3s;
 }
