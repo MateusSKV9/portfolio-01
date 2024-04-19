@@ -251,7 +251,7 @@ img#perfil {
 
 h1.secao {
     text-align: center;
-    margin: 10px;
+    margin: 0px;
     font-size: 2.1em;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -432,7 +432,8 @@ i#c-plus:hover {
 
 footer {
     text-align: center;
-    background-color: rgba(194, 194, 194, 0.6); 
+    color: white;
+    background-color: rgb(49, 49, 49); 
 }
 
 /* footer h2 {
@@ -455,7 +456,7 @@ form div {
 }
 
 form input, textarea {
-    border: 2px solid #008e2b;
+    border: 3px solid #00d540;
     width: 100%;
     border-radius: 8px;
     padding: 10px;
@@ -464,12 +465,13 @@ form input, textarea {
 
 input[type="submit"] {
     width: 20%;
-    background-color: #3c3c3c;
-    color: white;
+    background-color: #6dff60;
+    color: rgb(0, 0, 0);
 }
 
 input[type="submit"]:hover {
-    background-color: #00ff4c;
-    color: black;
+    background-color: #3ba232;
+    color: rgb(255, 255, 255);
     transition-duration: 0.3s;
+    transform: translate(2px, 2px);
 }
