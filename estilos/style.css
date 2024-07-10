@@ -107,7 +107,7 @@ nav a:before {
     width: 0;
     height: 3px;
     background-color: lawngreen;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 nav a:hover::before {
@@ -285,14 +285,14 @@ bold {
 
 .tecnologias div.imagens {
     width: 50vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 }
 
 .tecnologias div.imagens div {
     font-size: 2em;
     margin: 5px;
+    padding: 10px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
@@ -379,6 +379,7 @@ div.imagem img {
 
 .imagem div {
     justify-content: space-between;
+    padding: 10px !important;
 }
 
 .ling-used {
@@ -400,8 +401,8 @@ a.code {
     background-color: #3c3c3c;
 }
 
-i {
-    font-size: 40px;
+.tecnologias-card i {
+    font-size: 90px !important; 
 }
 
 i#html:hover {
@@ -428,6 +429,18 @@ i#c-plus:hover {
     color: #5d00ff;
 }
 
+i#c:hover {
+    color: blue;
+}
+
+i#python:hover {
+    color: #F7DF1E;
+}
+
+.card i {
+    font-size: 40px;
+}
+
 /*--------------- FOOTER ---------------*/
 
 footer {
@@ -435,14 +448,6 @@ footer {
     color: white;
     background-color: rgb(49, 49, 49); 
 }
-
-/* footer h2 {
-    background-color: #00ff4c;
-    display: inline;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-} */
 
 form {
     max-width: 800px;
