@@ -403,6 +403,7 @@ a.code {
 
 .tecnologias-card i {
     font-size: 90px !important; 
+    transition: all 0.15s ease-in-out;
 }
 
 i#html:hover {
