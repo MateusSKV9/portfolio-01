@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --default-background: white;
+    --default-color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +15,8 @@
 }
 
 html, body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--default-background);
+    color: var(--default-color);
 
 }
 
@@ -46,7 +51,6 @@ header {
     left: 0;
     z-index: 10000;
     width: 100vw;
-    background-color: white;
 }
 
 header h1 {
@@ -118,7 +122,6 @@ nav a:hover::before {
 
 div.main {
     height: 80vh;
-    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -231,7 +234,6 @@ img#perfil {
 }
 
 .container-redes .social {
-    background-color: white;
     margin: 7px;
     margin-top: 3px;
     padding: 1px 2px;
@@ -254,7 +256,7 @@ h1.secao {
     font-size: 2.1em;
     margin-top: 60px;
     margin-bottom: 45px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid var(--default-color);
 }
 
 .tecnologias {
@@ -267,7 +269,6 @@ h1.secao {
 }
 
 .tecnologias div.comentario {
-    background-color: rgb(255, 255, 255);
     width: 40vw;
     margin: 7px 5px;
     text-align: justify;
@@ -292,8 +293,7 @@ bold {
     font-size: 2em;
     margin: 5px;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid var(--default-color);
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
