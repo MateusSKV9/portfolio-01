@@ -11,25 +11,37 @@
 
 /* Pequenas telas */
 @media screen and (max-width: 600px) {
+    header {
+        padding-bottom: 8px;
+    }
+
     header.container {
         flex-direction: column;
         justify-content: center;
     }
 
-    header span {
+    header i {
+        font-size: 35px;
         cursor: pointer;
+        margin-bottom: 12px;
+    }
+
+    #switch:hover {
+        outline: none;
     }
 
     header nav {
         padding-bottom: 1px;
-        background-color: whitesmoke;
+        background-color: var(--default-background);
         width: 100%;   
         margin: 0;
+        margin-top: 12px;
     }
 
     header nav a {
         display: block;
         border-bottom: 1px solid rgb(175, 175, 175);
+        width: 90%;
 
         margin: auto;
     }
@@ -114,7 +126,7 @@
 }
 
 @media screen and (min-width: 601px) {
-    span#burguer {
+    #burguer {
         display: none;
     }
 }
