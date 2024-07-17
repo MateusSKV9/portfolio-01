@@ -2,8 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --default-background: white;
+    --default-background: whitesmoke;
     --default-color: black;
+    --default-icon-color: white;
+    --default-color-footer:rgb(20, 30, 40);
+}
+
+.dark {
+    --default-background: rgb(20, 30, 40);
+    --default-color: white;
+    --default-icon-color: black;
+    --default-green-color: lawngreen;
+}
+
+#switch {
+    height: 25px;
+    width: 25px;
+    background: white url(../imagens/sun.svg) no-repeat center center;
+    border: 2px solid var(--default-color);
+    border-radius: 50%;
+}
+
+#switch:hover {
+    outline: 8px solid var(--default-color);
+    transition: 0.3s ease;
+}
+
+#switch.dark {
+    background: white url(../imagens/moon-stars.svg) no-repeat center center;
 }
 
 * {
@@ -44,13 +70,14 @@ body {
 
 header {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: var(--default-color);
     font-size: 1em;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 10000;
     width: 100vw;
+    background-color: var(--default-background);
 }
 
 header h1 {
@@ -92,7 +119,7 @@ nav {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: var(--default-color);
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -128,7 +155,7 @@ div.main {
 }
 
 div.main .descricao {
-    color: rgb(0, 0, 0);
+    color: var(--default-color);
     width: 50%;
     margin: 20px;
     padding: 30px;
@@ -197,7 +224,7 @@ button img#link-externo {
     width: 0;
     height: 100%;
     background-color: lawngreen;
-    color: #ffffff;
+    color: var(--default-color);
     transition: width 0.5s ease;
     z-index: -1;
 }
@@ -209,7 +236,7 @@ button img#link-externo {
 img#perfil {
     width: 300px;
     margin: 20px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid var(--default-color);
     border-radius: 50%;
     animation: slide 2.5s linear infinite;
 } 
@@ -241,13 +268,15 @@ img#perfil {
 }
 
 .container-redes .social:hover {
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 3px var(--default-color);
     transform: translate(-2px, -2px);
     transition: transform 0.15s;
 }
 
-.social img {
-    width: 25px;
+.social i  {
+    font-size: 25px;
+    color: var(--default-color);
+
 }
 
 h1.secao {
@@ -324,7 +353,6 @@ div.imagens i {
     flex-wrap: wrap;
     margin: 0px 10px;
 
-    background-color: rgba(255, 255, 255, 0.615);
 }
 
 .card {
@@ -345,7 +373,7 @@ div.imagens i {
 
 .card h3 {
     padding: 10px 0px;
-    color: rgb(255, 255, 255);
+    color: var(--default-color);
     background-color: rgb(34, 172, 0);
     font-weight: bold;
     border-radius: 15px 0px 0px 0px;
@@ -366,6 +394,10 @@ div.imagem img {
 .card .ling {
     display: flex;
     justify-content: space-between;
+}
+
+.card i {
+    color: black;
 }
 
 .ling p {
@@ -447,7 +479,7 @@ i#python:hover {
 footer {
     text-align: center;
     color: white;
-    background-color: rgb(49, 49, 49); 
+    background-color: var(--default-color-footer); 
     padding-bottom: 50px;
 }
 
