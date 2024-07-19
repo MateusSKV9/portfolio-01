@@ -23,9 +23,33 @@
     border-radius: 50%;
 }
 
-#switch:hover {
-    outline: 8px solid var(--default-color);
-    transition: 0.1s ease;
+#switch:hover {   
+    animation: slide-switch 0.2s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes slide-switch {
+    0% {
+        outline: 0px solid var(--default-color);
+    } 
+    100% {
+        outline: 8px solid var(--default-color);
+    }
+}
+
+#switch:active {
+    background-color: var(--default-color);
+    background-blend-mode: color;
+    animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(50);
+    }
 }
 
 #switch.dark {
