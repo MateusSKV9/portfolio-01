@@ -397,7 +397,7 @@ div.imagens i {
 
 .card h3 {
     padding: 10px 0px;
-    color: var(--default-color);
+    color: white;
     background-color: rgb(34, 172, 0);
     font-weight: bold;
     border-radius: 15px 0px 0px 0px;
