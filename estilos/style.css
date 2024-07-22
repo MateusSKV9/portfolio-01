@@ -526,18 +526,35 @@ form input, textarea {
     margin: 10px 0px;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     width: 20%;
-    background-color: #6dff60;
     color: rgb(0, 0, 0);
 }
 
+input[type="submit"] {
+    background-color: #00d540;
+}
+
 input[type="submit"]:hover {
-    background-color: #3ba232;
+    background-color: #298721;
     color: rgb(255, 255, 255);
     transition-duration: 0.3s;
     transform: translate(2px, 2px);
 }
+
+input[type="reset"] {
+    margin-left: 10px;
+}
+
+input[type="reset"]:hover {
+    color: whitesmoke;
+    background-color: #686868;
+    transition-duration: 0.3s;
+    transform: translate(2px, 2px);
+}
+
+
+
 /* DIV AGRADECIMENTO */
 #agradecimento {
     display: flex;
