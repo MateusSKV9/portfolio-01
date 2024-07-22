@@ -177,13 +177,15 @@
     <footer>
         <h1 class="secao" id="contato">Contato</h1>
 
-        <form action="mateussilvanzg@gmail.com" method="post" enctype="text/plain" target="_blank">
+        <form action="https://formsubmit.co/mateussilvanzg@gmail.com" method="post" target="_blank">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
             <div>
                 <input type="text" name="name" id="iname" placeholder="Nome" required>
                 <input type="email" name="email" id="iemail" placeholder="Email" required>
             </div>
             <div><textarea name="msg" id="img" cols="30" rows="10" placeholder="Mensagem" required></textarea></div>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </form>
     </footer>
 
