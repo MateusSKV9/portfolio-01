@@ -13,9 +13,7 @@
 @media screen and (max-width: 600px) {
     header {
         padding-bottom: 8px;
-    }
-
-    header.container {
+        height: auto    ;
         flex-direction: column;
         justify-content: center;
     }
@@ -36,13 +34,14 @@
         width: 100%;   
         margin: 0;
         margin-top: 12px;
+        display: flex;
+        flex-direction: column;
     }
 
     header nav a {
         display: block;
         border-bottom: 1px solid rgb(175, 175, 175);
         width: 90%;
-
         margin: auto;
     }
 
@@ -67,7 +66,7 @@
     } 
 
     .container-redes {
-        margin-top: 180px;
+        margin-top: 220px;
     }
 
     .tecnologias {
@@ -84,19 +83,36 @@
         margin: auto;
         width: 100%;
     }
- 
+}
+
+@media screen and (max-width: 691px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+    img {
+        width: 250px;
+    }
+    .main .descricao {
+        font-size: 1em;
+    }
+    .main .descricao h1 {
+        font-size: 1.9em;
+    }
 }
 
 /* CELULARES */
-@media screen and (min-width: 601px) and (max-width: 780px) {
+@media screen and (min-width: 691px) and (max-width: 780px) {
     header.container {
         align-items: center;
         justify-content: space-between;
         align-content: center;
+        flex-wrap: wrap;
     }
     
     header h1 {
-        font-size: 26px;
+        font-size: 1.5em;
     }
 
     header nav {
@@ -120,7 +136,7 @@
     div.main .descricao {
         margin: 0;
         padding: 19px;
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 1.5em;
     }
 }
