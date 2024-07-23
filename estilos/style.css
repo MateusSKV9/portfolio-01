@@ -15,9 +15,11 @@
     --default-green-color: lawngreen;
 }
 
+
+/*--------------- SWITCH ---------------*/
 #switch {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background: white url(../imagens/sun.svg) no-repeat center center;
     border: 2px solid var(--default-color);
     border-radius: 50%;
@@ -56,6 +58,7 @@
     background: white url(../imagens/moon-stars.svg) no-repeat center center;
 }
 
+/*--------------- GERAL ---------------*/
 * {
     margin: 0;
     padding: 0;
@@ -67,17 +70,10 @@
 html, body {
     background-color: var(--default-background);
     color: var(--default-color);
-
-}
-
-body {
-    transform: translateX(-20px);
-    overflow-x: hidden;
 }
 
 .animar {
-    animation: delay 1.5s;
-    animation-fill-mode: forwards;
+    animation: delay 2.4s ease forwards;
 }
 
 @keyframes delay {
@@ -85,13 +81,11 @@ body {
         opacity: 0;
     }
     to {
-        transform: translateX(0px);
         opacity: 1;
     }
 }
 
 /*--------------- HEADER ---------------*/
-
 header {
     text-align: center;
     color: var(--default-color);
@@ -100,13 +94,23 @@ header {
     top: 0;
     left: 0;
     z-index: 10000;
-    width: 100vw;
+    width: 100%;
+    height: 8vh;
     background-color: var(--default-background);
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  
+    padding: 24px;
 }
 
+
 header h1 {
-    padding: 10px 20px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: 'Montserrat', arial;
 }
 
@@ -128,18 +132,9 @@ header h1:hover {
     }
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-}
-
 nav {
-    margin-right: 2%;
-    padding-bottom: 10px;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
@@ -147,9 +142,6 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
 
     position: relative;
 }
@@ -163,6 +155,7 @@ nav a:before {
     height: 3px;
     background-color: lawngreen;
     transition: 0.4s;
+    z-index: -1;
 }
 
 nav a:hover::before {
@@ -170,7 +163,6 @@ nav a:hover::before {
 }
 
 /*--------------- MAIN   ---------------*/
-
 div.main {
     height: 80vh;
     display: flex;
@@ -190,7 +182,7 @@ div.main .descricao {
 
 .descricao h1 {
     margin-bottom: 15px;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-family: 'Roboto', arial;
 }
 
@@ -222,7 +214,7 @@ button:hover {
     box-shadow: 3px 3px 3px rgb(98, 163, 0);
 }
 
-button a, span {
+button a, span, a {
     text-decoration: none;
 }
 
@@ -258,7 +250,7 @@ button img#link-externo {
 }
 
 img#perfil {
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
     border: 3px solid var(--default-color);
     border-radius: 50%;
@@ -303,9 +295,10 @@ img#perfil {
 
 }
 
+/*--------------- TECNOLOGIAS   ---------------*/
 h1.secao {
     text-align: center;
-    margin: 0px;
+    margin: 0 10px;
     font-size: 2.1em;
     margin-top: 60px;
     margin-bottom: 45px;
@@ -317,18 +310,18 @@ h1.secao {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    margin: 20px;
     align-items: center;
 }
 
-.tecnologias div.comentario {
+.tecnologias .comentario {
     width: 40vw;
     margin: 7px 5px;
     text-align: justify;
     font-size: 1.2em;
 }
 
-.tecnologias div.comentario p {
+.tecnologias .comentario p {
     text-indent: 5%;
 }
 
@@ -336,13 +329,13 @@ bold {
     color: rgb(110, 221, 0);
 }
 
-.tecnologias div.imagens {
+.container-tecnologias {
     width: 50vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
 }
 
-.tecnologias div.imagens div {
+.tecnologias .container-tecnologias div {
     font-size: 2em;
     margin: 5px;
     padding: 10px;
@@ -352,22 +345,13 @@ bold {
     font-weight: bold;
 }
 
-div.imagens i {
-    font-size: 3em;
-}
-
-.tecnologias div.imagens p {
+.container-tecnologias p {
     font-size: 0.6em;
     border-radius: 0px 0px 20px 20px;
     padding: 5px;
 }
 
-.tecnologias img {
-    margin: 20px;
-    margin-bottom: 5px;
-    width: 70px;
-}
-
+/*--------------- PROJETOS   ---------------*/
 .cards {
     display: flex;
     justify-content: center;
@@ -376,7 +360,6 @@ div.imagens i {
     
     flex-wrap: wrap;
     margin: 0px 10px;
-
 }
 
 .card {
@@ -499,7 +482,6 @@ i#python:hover {
 }
 
 /*--------------- FOOTER ---------------*/
-
 footer {
     text-align: center;
     color: white;
@@ -553,9 +535,7 @@ input[type="reset"]:hover {
     transform: translate(2px, 2px);
 }
 
-
-
-/* DIV AGRADECIMENTO */
+/*--------------- PÁGINA DE AGRADECIMENTO ---------------*/
 #agradecimento {
     display: flex;
     justify-content: center;
