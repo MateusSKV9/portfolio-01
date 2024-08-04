@@ -13,7 +13,7 @@
 @media screen and (max-width: 600px) {
     header {
         padding-bottom: 8px;
-        height: auto    ;
+        height: auto;
         flex-direction: column;
         justify-content: center;
     }
@@ -57,7 +57,7 @@
 
     .main div.descricao {
         min-width: 320px;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 1.5em;
     }
 
@@ -71,17 +71,22 @@
 
     .tecnologias {
         flex-direction: column;
+        gap: 20px;
     }
 
     .tecnologias div.comentario {
         width: 100%;
         margin: auto;
         margin-bottom: 15px;
+        font-size: 1.1em;
     }
 
-    .tecnologias div.imagens {
-        margin: auto;
-        width: 100%;
+    .container-tecnologias {
+       width: 100%;
+    }
+
+    .tecnologias .tecnologias-card i {
+        font-size: 2em !important;
     }
 }
 
@@ -100,6 +105,19 @@
     .main .descricao h1 {
         font-size: 1.9em;
     }
+    .tecnologias div.comentario {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+    .container-tecnologias {
+        width: 100%;
+     }
+ 
+     .tecnologias .tecnologias-card i {
+         font-size: 2em !important;
+     }
 }
 
 /* CELULARES */
@@ -136,7 +154,7 @@
     div.main .descricao {
         margin: 0;
         padding: 19px;
-        font-size: 0.9em;
+        font-size: 1.1em;
         line-height: 1.5em;
     }
 }
