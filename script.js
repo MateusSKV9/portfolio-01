@@ -39,3 +39,15 @@ function mudarTema () {
 }
 let btnTema = document.getElementById("switch");
 btnTema.addEventListener("click", mudarTema);
+
+function animarScroll() {
+    const header = document.querySelector('header');
+    const positionScroll = window.scrollY;
+
+    if(positionScroll <= 0) {
+        header.style.boxShadow = 'none';
+    } else {
+        header.style.boxShadow = '5px 1px 1px rgba(0, 0, 0, 0.1)';
+    }
+}
+window.addEventListener('scroll', animarScroll);
