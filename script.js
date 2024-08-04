@@ -51,3 +51,27 @@ function animarScroll() {
     }
 }
 window.addEventListener('scroll', animarScroll);
+
+ScrollReveal().reveal('.comentario', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.container-tecnologias', {
+    origin: 'right',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.cards', {
+    origin: 'bottom',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('footer', {
+    origin: 'bottom',
+    duration: 2000,
+    distance: '20%'
+});
