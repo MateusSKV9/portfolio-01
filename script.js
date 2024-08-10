@@ -1,3 +1,4 @@
+// MENU RESPOSIVO
 function menu () {
     if(window.innerWidth <= 600) {
         nav.style.display = 'none'
@@ -23,6 +24,8 @@ let nav = document.getElementById('itens');
 let burguer = document.getElementById('burguer');
 burguer.addEventListener('click', clickMenu);
 
+
+// MUDAR TEMA
 function mudarTema () {
     const html = document.documentElement;
     html.classList.toggle('dark');
@@ -40,6 +43,8 @@ function mudarTema () {
 let btnTema = document.getElementById("switch");
 btnTema.addEventListener("click", mudarTema);
 
+
+// ANIMAR SCROLL
 function animarScroll() {
     const header = document.querySelector('header');
     const positionScroll = window.scrollY;
@@ -52,6 +57,8 @@ function animarScroll() {
 }
 window.addEventListener('scroll', animarScroll);
 
+
+// ANIMAÇÕES DA BIBLIOTECA
 ScrollReveal().reveal('.comentario', {
     origin: 'left',
     duration: 2000,
@@ -75,3 +82,37 @@ ScrollReveal().reveal('footer', {
     duration: 2000,
     distance: '20%'
 });
+
+
+// REGISTRAR DADOS DO FORM
+function registrarDadosForm() {
+    let inputNome = document.getElementById('iname');
+    let inputEmail = document.getElementById('iemail');
+    
+    let nome = inputNome.value;
+    let email = inputEmail.value;
+    
+    localStorage.setItem('nome', nome);
+    localStorage.setItem('email', email);
+}
+let btnEnviar = document.getElementById('btnEnviar');
+btnEnviar.addEventListener('click', registrarDadosForm);
+
+
+// RECUPERAR DADOS DO FORM
+function recuperarDadosForm() {
+    if(localStorage.getItem('nome') && localStorage.getItem('email')) {
+        let inputNome = document.getElementById('iname');
+        let inputEmail = document.getElementById('iemail');
+    
+        let nome = inputNome.value;
+        let email = inputEmail.value;
+
+        nome = localStorage.getItem('nome');
+        email = localStorage.getItem('email');
+
+        inputNome.value = nome;
+        inputEmail.value = email;
+    }
+} 
+recuperarDadosForm();
