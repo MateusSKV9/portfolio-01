@@ -15,6 +15,9 @@
     --default-green-color: lawngreen;
 }
 
+html, body {
+    background-color: rgb(20, 30, 40);
+}
 
 /*--------------- SWITCH ---------------*/
 #switch {
@@ -360,6 +363,138 @@ bold {
     padding: 5px;
 }
 
+.tecnologias-card i {
+    font-size: 90px !important; 
+}
+
+i#html {
+    animation: changeHTML 8s ease infinite;
+}
+@keyframes changeHTML {
+    0% {color: var(--default-color);}
+    11.11% {color: #E34F26;}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#css {
+    animation: changeCSS 8s infinite;
+}
+@keyframes changeCSS {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: #1572B6;}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#javascript {
+    animation: changeJAVASCRIPT 8s ease infinite;
+}
+@keyframes changeJAVASCRIPT {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: #F7DF1E;}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#java {
+    animation: changeJAVA 8s ease infinite;
+}
+@keyframes changeJAVA {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: #ff004c;}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#php {
+    animation: changePHP 8s ease infinite;
+}
+@keyframes changePHP {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: #4F5D95;}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#cplus {
+    animation: changeCPLUS 8s ease infinite;
+}
+@keyframes changeCPLUS {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: #5d00ff;}
+    77.77% {color: var(--default-color);}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#c {
+    animation: changeC 8s ease infinite;
+}
+@keyframes changeC {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: blue;}
+    88.88% {color: var(--default-color);}
+    99.99% {color: var(--default-color);}
+}
+
+i#python {
+    animation: changePYTHON 8s ease infinite;
+}
+@keyframes changePYTHON {
+    0% {color: var(--default-color);}
+    11.11% {color: var(--default-color);}
+    22.22% {color: var(--default-color);}
+    33.33% {color: var(--default-color);}
+    44.44% {color: var(--default-color);}
+    55.55% {color: var(--default-color);}
+    66.66% {color: var(--default-color);}
+    77.77% {color: var(--default-color);}
+    88.88% {color: #F7DF1E;}
+    99.99% {color: var(--default-color);}
+}
+
 /*--------------- PROJETOS   ---------------*/
 .cards {
     display: flex;
@@ -412,7 +547,7 @@ div.imagem img {
 }
 
 .card i {
-    color: black;
+    color: var(--default-color);
 }
 
 .ling p {
@@ -446,43 +581,6 @@ a.code {
     font-weight: bold;
     border-radius: 5px;
     background-color: #3c3c3c;
-}
-
-.tecnologias-card i {
-    font-size: 90px !important; 
-    transition: all 0.15s ease-in-out;
-}
-
-i#html:hover {
-    color: #E34F26;
-}
-
-i#css:hover {
-    color: #1572B6;
-}
-
-i#javascript:hover {
-    color: #F7DF1E;
-}
-
-i#java:hover {
-    color: #ff004c;
-}
-
-i#php:hover {
-    color: #4F5D95;
-}
-
-i#c-plus:hover {
-    color: #5d00ff;
-}
-
-i#c:hover {
-    color: blue;
-}
-
-i#python:hover {
-    color: #F7DF1E;
 }
 
 .card i {
