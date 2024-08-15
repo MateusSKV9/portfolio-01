@@ -547,7 +547,7 @@ div.imagem img {
 }
 
 .card i {
-    color: var(--default-color);
+    color: var(--default-icon-color);
 }
 
 .ling p {
