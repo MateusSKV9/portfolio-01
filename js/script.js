@@ -13,27 +13,27 @@ function mudouTam() {
   }
 }
 
-// function clickMenu () {
-//     if(nav.style.display == 'flex') {
-//         nav.style.display = 'none'
-//     } else {
-//         nav.style.display = 'flex'
-//     }
-// }
+function clickMenu () {
+    if(nav.style.display == 'flex') {
+        nav.style.display = 'none'
+    } else {
+        nav.style.display = 'flex'
+    }
+}
 let nav = document.getElementById("itens");
 let burguer = document.getElementById("burguer");
-// burguer.addEventListener('click', clickMenu);
+burguer.addEventListener('click', clickMenu);
 
-burguer.addEventListener("click", function (event) {
-  nav.style.display = nav.style.display === "none" ? "flex" : "none";
-  event.stopPropagation();
-});
+// burguer.addEventListener("click", function (event) {
+//   nav.style.display = nav.style.display === "none" ? "flex" : "none";
+//   event.stopPropagation();
+// });
 
-document.addEventListener("click", function (event) {
-  if (!nav.contains(event.target) && !nav.contains(event.target)) {
-    nav.style.display = "none";
-  }
-});
+// document.addEventListener("click", function (event) {
+//   if (!nav.contains(event.target) && !nav.contains(event.target)) {
+//     nav.style.display = "none";
+//   }
+// });
 
 // MUDAR TEMA
 function mudarTema() {
