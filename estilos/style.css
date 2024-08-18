@@ -124,6 +124,7 @@ header h1 {
 
 header h1 a {
     color: inherit;
+    transition: all .05s ease;
 }
 
 header h1:hover {
@@ -218,6 +219,7 @@ button {
     font-weight: bold;
     border: 1px solid black;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 button:hover {
@@ -242,6 +244,7 @@ button img#link-externo {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .contratar::before {
@@ -293,6 +296,7 @@ img#perfil {
     margin-top: 3px;
     padding: 1px 2px;
     border-radius: 20%;
+    transition: all .3s ease;
 }
 
 .container-redes .social:hover {
@@ -547,7 +551,7 @@ div.imagem img {
 }
 
 .card i {
-    color: var(--default-icon-color);
+    color: black;
 }
 
 .ling p {
@@ -588,6 +592,7 @@ a.code {
 }
 
 /*--------------- FOOTER ---------------*/
+
 footer {
     text-align: center;
     color: white;
@@ -642,6 +647,7 @@ input[type="reset"]:hover {
 }
 
 /*--------------- PÁGINA DE AGRADECIMENTO ---------------*/
+
 #agradecimento {
     display: flex;
     justify-content: center;
