@@ -162,8 +162,8 @@ nav a {
 nav a:before {
     content: '';
     position: absolute;
-    top: 80%;
-    left: 0;
+    top: 90%;
+    left: 50%;
     width: 0;
     height: 3px;
     background-color: lawngreen;
@@ -172,7 +172,25 @@ nav a:before {
 }
 
 nav a:hover::before {
-    width: 100%;
+    width: 50%;
+    height: 2px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    width: 0;
+    height: 3px;
+    background-color: lawngreen;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+nav a:hover::after {
+    width: 50%;
+    height: 2px;
 }
 
 /*--------------- MAIN   ---------------*/
