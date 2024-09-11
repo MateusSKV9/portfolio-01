@@ -20,6 +20,7 @@ html, body {
 }
 
 /*--------------- SWITCH ---------------*/
+
 #switch {
     height: 30px;
     width: 30px;
@@ -62,6 +63,7 @@ html, body {
 }
 
 /*--------------- GERAL ---------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -93,6 +95,7 @@ html {
 }
 
 /*--------------- HEADER ---------------*/
+
 header {
     text-align: center;
     color: var(--default-color);
@@ -114,7 +117,6 @@ header {
   
     padding: 24px;
 }
-
 
 header h1 {
     font-size: 2.2em;
@@ -194,6 +196,7 @@ nav a:hover::after {
 }
 
 /*--------------- MAIN   ---------------*/
+
 div.main {
     height: 80vh;
     display: flex;
@@ -330,6 +333,7 @@ img#perfil {
 }
 
 /*--------------- TECNOLOGIAS   ---------------*/
+
 h1.secao {
     text-align: center;
     margin: 0 10px;
@@ -518,6 +522,7 @@ i#python {
 }
 
 /*--------------- PROJETOS   ---------------*/
+
 .cards {
     display: flex;
     justify-content: center;
