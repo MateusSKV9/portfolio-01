@@ -62,7 +62,6 @@ function animarScroll() {
 		header.style.boxShadow = "none";
 		header.style.border = "none";
 	} else {
-		header.style.borderBottom = "1px solid var(--border-title)";
 		header.style.boxShadow = "5px 1px 1px rgba(0, 0, 0, 0.1)";
 	}
 }

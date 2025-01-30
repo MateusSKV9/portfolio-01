@@ -7,160 +7,160 @@
     Tablet: 768px até 992px
     Desktop: 992px até 1200px
     Grandes telas: acima de 1200px
-*/  
+*/
 
 /* Pequenas telas */
 @media screen and (max-width: 600px) {
-    header {
-        padding-bottom: 8px;
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-    }
+	header {
+		padding-bottom: 8px;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
 
-    header i {
-        font-size: 35px;
-        cursor: pointer;
-        margin-bottom: 12px;
-    }
+	header i {
+		font-size: 35px;
+		cursor: pointer;
+		margin-bottom: 12px;
+	}
 
-    #switch:hover {
-        outline: none;
-    }
+	#switch:hover {
+		outline: none;
+	}
 
-    header nav {
-        padding-bottom: 1px;
-        background-color: var(--default-background);
-        width: 100%;   
-        margin: 0;
-        margin-top: 12px;
-        display: flex;
-        flex-direction: column;
-    }
+	header nav {
+		padding-bottom: 1px;
+		background-color: var(--default-background);
+		width: 100%;
+		margin: 0;
+		margin-top: 12px;
+		display: flex;
+		flex-direction: column;
+	}
 
-    header nav a {
-        display: block;
-        border-bottom: 1px solid rgb(175, 175, 175);
-        width: 90%;
-        margin: auto;
-    }
+	header nav a {
+		display: block;
+		border-bottom: 1px solid rgb(175, 175, 175);
+		width: 90%;
+		margin: auto;
+	}
 
-    header nav a:hover::before {
-        width: 0;
-    }
+	header nav a:hover::before {
+		width: 0;
+	}
 
-    div.main {
-        margin-top: 20vh;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+	div.main {
+		margin-top: 20vh;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
-    .main div.descricao {
-        min-width: 320px;
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
+	.main div.descricao {
+		min-width: 300px;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
 
-    .main div.container-img {
-        margin: auto;
-    } 
+	.main div.container-img {
+		margin: auto;
+	}
 
-    .container-redes {
-        margin-top: 220px;
-    }
+	.container-redes {
+		margin-top: 320px;
+	}
 
-    .tecnologias {
-        flex-direction: column;
-        gap: 20px;
-    }
+	.tecnologias {
+		flex-direction: column;
+		gap: 20px;
+	}
 
-    .tecnologias div.comentario {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 15px;
-        font-size: 1.1em;
-    }
+	.tecnologias div.comentario {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+		font-size: 1.1em;
+	}
 
-    .container-tecnologias {
-       width: 100%;
-    }
+	.container-tecnologias {
+		width: 100%;
+	}
 
-    .tecnologias .tecnologias-card i {
-        font-size: 2em !important;
-    }
+	.tecnologias .tecnologias-card i {
+		font-size: 2em !important;
+	}
 }
 
 @media screen and (max-width: 691px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-        height: auto;
-    }
-    img {
-        width: 250px;
-    }
-    .main .descricao {
-        font-size: 1em;
-    }
-    .main .descricao h1 {
-        font-size: 1.9em;
-    }
-    .tecnologias div.comentario {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 15px;
-        font-size: 1.1em;
-    }
-    .container-tecnologias {
-        width: 100%;
-     }
- 
-     .tecnologias .tecnologias-card i {
-         font-size: 2em !important;
-     }
+	header {
+		flex-direction: column;
+		gap: 10px;
+		height: auto;
+	}
+	img {
+		width: 250px;
+	}
+	.main .descricao {
+		font-size: 1em;
+	}
+	.main .descricao h1 {
+		font-size: 1.9em;
+	}
+	.tecnologias div.comentario {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+		font-size: 1.1em;
+	}
+	.container-tecnologias {
+		width: 100%;
+	}
+
+	.tecnologias .tecnologias-card i {
+		font-size: 2em !important;
+	}
 }
 
 /* CELULARES */
 @media screen and (min-width: 691px) and (max-width: 780px) {
-    header.container {
-        align-items: center;
-        justify-content: space-between;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-    
-    header h1 {
-        font-size: 1.5em;
-    }
+	header.container {
+		align-items: center;
+		justify-content: space-between;
+		align-content: center;
+		flex-wrap: wrap;
+	}
 
-    header nav {
-        padding-top: 5px;
-        font-size: 12px;
-    }
+	header h1 {
+		font-size: 1.5em;
+	}
 
-    header nav a {
-        font-size: 1.49em;
-        margin: auto;
-    }
+	header nav {
+		padding-top: 5px;
+		font-size: 12px;
+	}
 
-    header #burguer {
-        display: none;
-    }
+	header nav a {
+		font-size: 1.49em;
+		margin: auto;
+	}
 
-    img#perfil {
-        width: 250px;
-    }
+	header #burguer {
+		display: none;
+	}
 
-    div.main .descricao {
-        margin: 0;
-        padding: 19px;
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
+	img#perfil {
+		width: 250px;
+	}
+
+	div.main .descricao {
+		margin: 0;
+		padding: 19px;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
 }
 
 @media screen and (min-width: 601px) {
-    #burguer {
-        display: none;
-    }
+	#burguer {
+		display: none;
+	}
 }
