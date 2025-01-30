@@ -141,18 +141,18 @@ header h1 a {
 }
 
 header h1:hover {
-	animation: animate-logo 1s infinite;
+	animation: animate-logo ease 1s infinite;
 	text-shadow: 3px 3px 2px rgba(0, 76, 0, 0.779);
 	transform: translate(2px, 2px);
 }
 
 @keyframes animate-logo {
 	0% {
-		color: rgb(216, 216, 216);
+		color: white;
 	}
 	50%,
 	95% {
-		color: rgb(110, 221, 0);
+		color: var(--highlight-green-color);
 	}
 	100% {
 		color: rgb(217, 217, 217);
@@ -234,6 +234,10 @@ div.main .descricao {
 
 .descricao h2 {
 	margin-bottom: 3px;
+}
+
+.descricao p {
+	margin-top: 5px;
 }
 
 .descricao strong {
@@ -363,9 +367,8 @@ h1.secao {
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 20px;
-	align-items: center;
+	align-items: flex-start;
 }
-
 
 .tecnologias .comentario {
 	width: 40vw;
@@ -379,14 +382,14 @@ h1.secao {
 }
 
 bold {
-	color: rgb(110, 221, 0);
+	color: var(--highlight-green-color);
 }
 
 .container-tecnologias {
 	width: 50vw;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 5px;
+	gap: 5px;
 }
 
 .tecnologias-card {
@@ -398,7 +401,7 @@ bold {
 	text-align: center;
 	font-weight: bold;
 	transition: all 0.2s ease;
-  min-width: max-content;
+	min-width: max-content;
 }
 
 .container-tecnologias p {
@@ -411,53 +414,67 @@ bold {
 	font-size: 90px !important;
 }
 
+.tecnologias-card:hover {
+	transform: translateY(-10px);
+}
+
 #angular:hover {
 	color: #dd0031;
-	border-color: #dd0031;
+	border-color: rgb(221, 0, 49);
+	box-shadow: 0px 3px 0px rgba(219, 0, 49, 0.2);
 }
 #typescript:hover {
 	color: #3178c6;
-	border-color: #3178c6;
+	border-color: rgb(49, 120, 198);
+	box-shadow: 0px 3px 0px rgba(49, 121, 198, 0.2);
 }
 
 #html:hover {
 	color: #e34f26;
-	border-color: #e34f26;
+	border-color: rgb(227, 79, 38);
+	box-shadow: 0px 3px 0px rgba(227, 79, 38, 0.2);
 }
 
 #css:hover {
 	color: #1572b6;
-	border-color: #1572b6;
+	border-color: rgb(21, 114, 182);
+	box-shadow: 0px 3px 0px rgba(21, 114, 182, 0.2);
 }
 
 #javascript:hover {
 	color: #f7df1e;
-	border-color: #f7df1e;
+	border-color: rgb(247, 223, 30);
+	box-shadow: 0px 3px 0px rgba(247, 223, 30, 0.2);
 }
 
 #java:hover {
 	color: #ff004c;
-	border-color: #ff004c;
+	border-color: rgb(255, 0, 76);
+	box-shadow: 0px 3px 0px rgba(255, 0, 76, 0.2);
 }
 
 #php:hover {
 	color: #4f5d95;
-	border-color: #4f5d95;
+	border-color: rgb(79, 93, 149);
+	box-shadow: 0px 3px 0px rgba(79, 93, 149, 0.2);
 }
 
 #cplus:hover {
 	color: #5d00ff;
-	border-color: #5d00ff;
+	border-color: rgb(93, 0, 255);
+	box-shadow: 0px 3px 0px rgba(93, 0, 255, 0.2);
 }
 
 #c:hover {
 	color: blue;
-	border-color: blue;
+	border-color: rgb(0, 0, 255);
+	box-shadow: 0px 3px 0px rgba(0, 0, 255, 0.2);
 }
 
 #python:hover {
 	color: #f7df1e;
-	border-color: #f7df1e;
+	border-color: rgb(247, 223, 30);
+	box-shadow: 0px 3px 0px rgba(247, 223, 30, 0.2);
 }
 
 /*--------------- PROJETOS   ---------------*/
@@ -480,18 +497,19 @@ bold {
 	text-align: center;
 	border-radius: 15px 0px;
 	transition: all 0.3s ease;
+	border: 2px solid var(--default-background);
 }
 
 .card:hover {
-	border: 2px solid rgb(14, 144, 0);
-	box-shadow: 0px 2px 6px 3px rgba(0, 0, 0, 0.05);
+	border: 2px solid var(--highlight-green-color);
+	box-shadow: 0px 0px 10px rgba(118, 118, 118, 0.35);
 	transform: scale(1.05) !important;
 }
 
 .card h3 {
 	padding: 10px 0px;
 	color: white;
-	background-color: rgb(34, 172, 0);
+	background-color: var(--highlight-green-color);
 	font-weight: bold;
 	border-radius: 15px 0px 0px 0px;
 }
@@ -575,7 +593,7 @@ form div {
 
 form input,
 textarea {
-	border: 3px solid #00d540;
+	border: 3px solid var(--highlight-green-color);
 	width: 100%;
 	border-radius: 8px;
 	padding: 10px;
@@ -589,7 +607,7 @@ input[type="reset"] {
 }
 
 input[type="submit"] {
-	background-color: #00d540;
+	background-color: var(--highlight-green-color);
 	transition-duration: 0.3s;
 	font-weight: bold;
 }
@@ -598,6 +616,7 @@ input[type="submit"]:hover {
 	background-color: #298721;
 	color: rgb(255, 255, 255);
 	transform: translate(2px, 2px);
+	cursor: pointer;
 }
 
 input[type="reset"] {
@@ -610,6 +629,7 @@ input[type="reset"]:hover {
 	color: whitesmoke;
 	background-color: #686868;
 	transform: translate(2px, 2px);
+	cursor: pointer;
 }
 
 #right {
