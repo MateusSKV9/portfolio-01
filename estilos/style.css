@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-	--highlight-green-color: rgb(0, 255, 76);
+	--highlight-green-color: #17e061;
 	--shadow-green-color: rgba(0, 255, 76, 0.455);
 	--default-background: color-mix(
 		in srgb,
@@ -27,6 +27,7 @@
 html,
 body {
 	background-color: rgb(20, 30, 40);
+	overflow: auto;
 }
 
 /*--------------- SWITCH ---------------*/
@@ -219,7 +220,7 @@ div.main {
 div.main .descricao {
 	color: var(--default-color);
 	width: 50%;
-	margin: 20px;
+	margin: 10px;
 	padding: 30px;
 	border-radius: 10px;
 	line-height: 1.2em;
@@ -245,19 +246,28 @@ div.main .descricao {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.693);
 }
 
+.descricao .buttons {
+  display: flex;
+}
+
 button {
 	margin-top: 10px;
 	margin-right: 5px;
 	font-size: 0.9em;
 	padding: 7px;
-	color: var(--default-color-footer);
+	color: white;
 	background-color: var(--highlight-green-color);
 	border-radius: 8px;
 	font-weight: bold;
-	border: 1px solid var(--default-color-footer);
+	border: 1px solid rgb(162, 162, 162);
 	cursor: pointer;
 	transition: all 0.3s ease;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.descricao button:first-of-type {
+  display: flex;
+  align-items: center;
 }
 
 button:hover {
@@ -271,9 +281,9 @@ a {
 	text-decoration: none;
 }
 
-button img#link-externo {
-	width: 15px;
-	padding: 0px 0px 0px 2px;
+button #link-externo {
+	font-size: 0.76em;
+	padding: 0px 0px 0px 4px;
 }
 
 .contratar {
