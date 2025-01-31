@@ -112,7 +112,7 @@ header {
 	text-align: center;
 	color: var(--default-color);
 	font-size: 1em;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10000;
@@ -211,7 +211,7 @@ nav a:hover::after {
 /*--------------- MAIN   ---------------*/
 
 div.main {
-	height: 80vh;
+	height: 90vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -247,7 +247,7 @@ div.main .descricao {
 }
 
 .descricao .buttons {
-  display: flex;
+	display: flex;
 }
 
 button {
@@ -266,8 +266,8 @@ button {
 }
 
 .descricao button:first-of-type {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 button:hover {
