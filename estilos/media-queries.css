@@ -164,3 +164,18 @@
 		display: none;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.card-content-info-primary {
+		width: 100%;
+	}
+
+	.card-content-info-secundary {
+		width: 100%;
+		order: -1;
+	}
+
+	.card-content {
+		flex-direction: column;
+	}
+}
