@@ -502,8 +502,8 @@ bold {
 .card {
 	background-color: whitesmoke;
 	margin: 10px;
-	width: 280px;
-	height: 350px;
+	width: 560px;
+	/* height: 350px; */
 	text-align: center;
 	border-radius: 15px 0px;
 	transition: all 0.3s ease;
@@ -516,6 +516,96 @@ bold {
 	transform: scale(1.05) !important;
 }
 
+.card:hover .deploy {
+	animation: pulse ease 1.3s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.05);
+	}
+	40% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.deploy {
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+}
+
+.deploy:hover {
+	border-color: var(--highlight-green-color);
+	color: var(--highlight-green-color);
+}
+
+.code {
+	transition: all 0.5s ease;
+}
+.code:hover {
+	transform: translateY(2px);
+}
+
+.card-content {
+	display: flex;
+	padding: 10px;
+	gap: 15px;
+}
+
+.card-content-info-primary {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding-bottom: 44px;
+}
+
+.card-content-info-primary p {
+	width: 100%;
+	text-align: left;
+	font-size: 1.1em;
+	line-height: 25px;
+}
+
+.code-link {
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: white;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 5px;
+}
+
+.code-link {
+	font-size: 1.2em;
+	padding: 5px 10px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card-content-info-secundary {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
 .card h3 {
 	padding: 10px 0px;
 	color: white;
@@ -524,24 +614,39 @@ bold {
 	border-radius: 15px 0px 0px 0px;
 }
 
-div.imagem {
+.card-content .imagem {
 	width: 100%;
 	display: block;
 	margin: auto;
 }
 
-div.imagem img {
+.imagem img {
 	width: 100%;
 	height: 250px;
+	border-radius: 7px;
+	transition: all 0.5s ease;
+	object-fit: cover;
+}
+
+.card-links {
+	margin-top: auto;
+	display: flex;
+	gap: 10px;
 }
 
 .card .ling {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
-.card i {
-	color: var(--default-color-footer) !important;
+.card i.html {
+	color: #e34f26;
+}
+.card i.css {
+	color: #1572b6;
+}
+.card i.javascript {
+	color: #f7df1e;
 }
 
 .ling p {
@@ -568,16 +673,7 @@ div.ling-used {
 	margin: 10px;
 }
 
-a.code {
-	text-decoration: none;
-	color: white;
-	padding: 5px 10px;
-	font-weight: bold;
-	border-radius: 5px;
-	background-color: #3c3c3c;
-}
-
-.card i {
+.ling i {
 	font-size: 40px;
 }
 
