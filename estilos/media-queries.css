@@ -11,6 +11,10 @@
 
 /* Pequenas telas */
 @media screen and (max-width: 600px) {
+	h1.secao {
+		scroll-margin-top: 173px;
+	}
+
 	header {
 		padding-bottom: 8px;
 		height: auto;
@@ -45,10 +49,6 @@
 		margin: auto;
 	}
 
-	header nav a:hover::before {
-		width: 0;
-	}
-
 	div.main {
 		margin-top: 20vh;
 		flex-direction: column;
@@ -65,7 +65,7 @@
 		margin: auto;
 	}
 
-	.container-redes {
+	.main + .container-redes {
 		margin-top: 320px;
 	}
 
@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 691px) {
+  h1.secao {
+    scroll-margin-top: 164px;
+  }
+
 	header {
 		flex-direction: column;
 		gap: 10px;
@@ -99,6 +103,12 @@
 	img {
 		width: 250px;
 	}
+	div.main {
+		margin-top: 164px;
+		align-items: flex-start;
+		height: 70vh;
+	}
+
 	.main .descricao {
 		font-size: 1em;
 	}
