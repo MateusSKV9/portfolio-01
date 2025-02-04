@@ -24,12 +24,6 @@
 	--border-title: white;
 }
 
-html,
-body {
-	background-color: rgb(20, 30, 40);
-	overflow: auto;
-}
-
 /*--------------- SWITCH ---------------*/
 
 #switch {
@@ -87,10 +81,20 @@ html,
 body {
 	background-color: var(--default-background);
 	color: var(--default-color);
+	overflow-y: auto;
 }
 
 html {
 	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--highlight-green-color);
+	border-radius: 5px;
 }
 
 .animar {
@@ -363,11 +367,12 @@ img#perfil {
 /*--------------- TECNOLOGIAS   ---------------*/
 
 h1.secao {
+  scroll-margin-top: 63px;
 	text-align: center;
 	margin: 0 10px;
 	font-size: 2.1em;
 	margin-top: 60px;
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 	border: 2px solid oklch(25.16% 0.008 308.11);
 }
 
@@ -502,12 +507,14 @@ bold {
 .card {
 	background-color: whitesmoke;
 	margin: 10px;
-	width: 560px;
+	max-width: 600px;
+	width: 100%;
 	/* height: 350px; */
 	text-align: center;
 	border-radius: 15px 0px;
-	transition: all 0.3s ease;
+	transition: transform 0.3s ease;
 	border: 2px solid var(--default-background);
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
@@ -516,8 +523,12 @@ bold {
 	transform: scale(1.05) !important;
 }
 
+.card h3 {
+	font-size: 1.2em;
+}
+
 .card:hover .deploy {
-	animation: pulse ease 1.3s infinite;
+	animation: pulse ease 1.2s 0.2s infinite;
 }
 
 @keyframes pulse {
@@ -555,7 +566,7 @@ bold {
 	transition: all 0.5s ease;
 }
 .code:hover {
-	transform: translateY(2px);
+	transform: translateY(3px);
 }
 
 .card-content {
@@ -570,14 +581,21 @@ bold {
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
-	padding-bottom: 44px;
+	padding-bottom: 15px;
 }
 
 .card-content-info-primary p {
 	width: 100%;
-	text-align: left;
+	text-align: justify;
 	font-size: 1.1em;
-	line-height: 25px;
+	line-height: 22px;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	color: var(--default-color);
+}
+
+.dark .card {
+	background-color: rgb(51, 47, 47);
 }
 
 .code-link {
@@ -604,6 +622,7 @@ bold {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	gap: 1px;
 }
 
 .card h3 {
@@ -637,6 +656,7 @@ bold {
 .card .ling {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .card i.html {
@@ -648,6 +668,10 @@ bold {
 .card i.javascript {
 	color: #f7df1e;
 }
+.card i.angular {
+	color: #dd0031;
+	font-size: 33px;
+}
 
 .ling p {
 	padding: 4px;
@@ -656,11 +680,6 @@ bold {
 	color: rgb(225, 13, 13);
 	font-weight: bold;
 	display: inline-block;
-}
-
-.imagem div {
-	justify-content: space-between;
-	padding: 10px !important;
 }
 
 .ling-used {
