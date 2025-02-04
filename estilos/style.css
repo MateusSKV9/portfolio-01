@@ -762,6 +762,30 @@ input[type="reset"]:hover {
 	font-size: 0.9em;
 }
 
+footer .container-redes {
+	justify-content: center;
+}
+
+footer .container-redes .social:hover {
+	box-shadow: none;
+}
+
+footer .social a {
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+footer .social a:hover,
+footer .social a:hover i {
+	color: var(--highlight-green-color);
+}
+
+footer .container-redes .social i {
+	color: white;
+}
+
 /*--------------- PÁGINA DE AGRADECIMENTO ---------------*/
 
 #agradecimento {
