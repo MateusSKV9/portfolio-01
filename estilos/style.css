@@ -214,14 +214,14 @@ nav a:hover::after {
 
 /*--------------- MAIN   ---------------*/
 
-div.main {
+.main {
 	height: 90vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
-div.main .descricao {
+.main .descricao {
 	color: var(--default-color);
 	width: 50%;
 	margin: 10px;
@@ -367,7 +367,7 @@ img#perfil {
 /*--------------- TECNOLOGIAS   ---------------*/
 
 h1.secao {
-  scroll-margin-top: 63px;
+	scroll-margin-top: 63px;
 	text-align: center;
 	margin: 0 10px;
 	font-size: 2.1em;
@@ -376,7 +376,7 @@ h1.secao {
 	border: 2px solid oklch(25.16% 0.008 308.11);
 }
 
-.tecnologias {
+.content-tecnologias {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -385,14 +385,14 @@ h1.secao {
 	align-items: flex-start;
 }
 
-.tecnologias .comentario {
+.content-tecnologias .comentario {
 	width: 40vw;
 	margin: 7px 5px;
 	text-align: justify;
 	font-size: 1.2em;
 }
 
-.tecnologias .comentario p {
+.content-tecnologias .comentario p {
 	text-indent: 5%;
 }
 
@@ -494,7 +494,7 @@ bold {
 
 /*--------------- PROJETOS   ---------------*/
 
-.cards {
+.cards-content {
 	display: flex;
 	justify-content: center;
 	margin: auto;
@@ -586,13 +586,9 @@ bold {
 
 .card-content-info-primary p {
 	width: 100%;
-	text-align: justify;
-	font-size: 1.1em;
 	text-align: left;
 	font-size: 1.05em;
 	line-height: 22px;
-	-webkit-hyphens: auto;
-	hyphens: auto;
 	color: var(--default-color);
 }
 
