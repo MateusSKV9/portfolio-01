@@ -588,6 +588,8 @@ bold {
 	width: 100%;
 	text-align: justify;
 	font-size: 1.1em;
+	text-align: left;
+	font-size: 1.05em;
 	line-height: 22px;
 	-webkit-hyphens: auto;
 	hyphens: auto;
