@@ -81,7 +81,10 @@ html,
 body {
 	background-color: var(--default-background);
 	color: var(--default-color);
-	overflow-y: auto;
+}
+
+body {
+  min-height: 100vh;
 }
 
 html {
@@ -394,6 +397,7 @@ h1.secao {
 
 .content-tecnologias .comentario p {
 	text-indent: 5%;
+  margin-top: 6px;
 }
 
 bold {
@@ -810,6 +814,6 @@ footer .container-redes .social i {
 
 #agradecimento a:hover {
 	background-color: var(--default-color);
-	color: var(--default-background);
+	color: white;
 	transform: translateY(5px);
 }
