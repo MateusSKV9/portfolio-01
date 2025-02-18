@@ -1,39 +1,34 @@
-// MENU RESPOSIVO
-function menu() {
-	if (window.innerWidth <= 600) {
-		nav.style.display = "none";
-	}
-}
-
-function mudouTam() {
-	if (window.innerWidth >= 600) {
-		nav.style.display = "flex";
-	} else {
-		nav.style.display = "none";
-	}
-}
-
-function clickMenu() {
-	if (nav.style.display == "flex") {
-		nav.style.display = "none";
-	} else {
-		nav.style.display = "flex";
-	}
-}
 let nav = document.getElementById("itens");
 let burguer = document.getElementById("burguer");
+
+function clickMenu() {
+    if (nav.style.display === "flex") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+}
+
 burguer.addEventListener("click", clickMenu);
 
-// burguer.addEventListener("click", function (event) {
-//   nav.style.display = nav.style.display === "none" ? "flex" : "none";
-//   event.stopPropagation();
-// });
+document.addEventListener("click", function(event) {
+    if (!nav.contains(event.target) && event.target !== burguer) {
+        nav.style.display = "none";
+    }
+});
 
-// document.addEventListener("click", function (event) {
-//   if (!nav.contains(event.target) && !nav.contains(event.target)) {
-//     nav.style.display = "none";
-//   }
-// });
+function menu() {
+    if (window.innerWidth <= 600) {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+}
+
+window.addEventListener("resize", menu);
+
+menu();
+
 
 // MUDAR TEMA
 function mudarTema() {
@@ -70,19 +65,19 @@ window.addEventListener("scroll", animarScroll);
 // ANIMAÇÕES DA BIBLIOTECA
 ScrollReveal().reveal(".comentario", {
 	origin: "left",
-	duration: 2000,
+	duration: 1500,
 	distance: "20%",
 });
 
 ScrollReveal().reveal(".container-tecnologias", {
 	origin: "right",
-	duration: 2000,
+	duration: 1500,
 	distance: "20%",
 });
 
 ScrollReveal().reveal(".cards", {
 	origin: "bottom",
-	duration: 2000,
+	duration: 1500,
 	distance: "20%",
 });
 
