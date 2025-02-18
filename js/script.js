@@ -2,33 +2,34 @@ let nav = document.getElementById("itens");
 let burguer = document.getElementById("burguer");
 
 function clickMenu() {
-    if (nav.style.display === "flex") {
-        nav.style.display = "none";
-    } else {
-        nav.style.display = "flex";
-    }
+	if (nav.style.display === "flex") {
+		nav.style.display = "none";
+	} else {
+		nav.style.display = "flex";
+	}
 }
 
 burguer.addEventListener("click", clickMenu);
 
-document.addEventListener("click", function(event) {
-    if (!nav.contains(event.target) && event.target !== burguer) {
-        nav.style.display = "none";
-    }
+document.addEventListener("click", function (event) {
+	if (window.innerWidth <= 600) {
+		if (!nav.contains(event.target) && event.target !== burguer) {
+			nav.style.display = "none";
+		}
+	}
 });
 
 function menu() {
-    if (window.innerWidth <= 600) {
-        nav.style.display = "none";
-    } else {
-        nav.style.display = "flex";
-    }
+	if (window.innerWidth <= 600) {
+		nav.style.display = "none";
+	} else {
+		nav.style.display = "flex";
+	}
 }
 
 window.addEventListener("resize", menu);
 
 menu();
-
 
 // MUDAR TEMA
 function mudarTema() {

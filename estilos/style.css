@@ -84,7 +84,7 @@ body {
 }
 
 body {
-  min-height: 100vh;
+	min-height: 100vh;
 }
 
 html {
@@ -123,7 +123,7 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 10000;
-	width: 100%;
+	width: 100vw;
 	height: 8vh;
 	background-color: var(--header-background);
 
@@ -149,8 +149,8 @@ header h1 a {
 }
 
 header h1:hover {
-	animation: animate-logo ease 1s infinite;
-	text-shadow: 3px 3px 2px rgba(0, 76, 0, 0.779);
+	animation: animate-logo ease 1.5s infinite;
+	text-shadow: 3px 3px 2px rgba(0, 76, 0, 0.6);
 	transform: translate(2px, 2px);
 }
 
@@ -170,6 +170,7 @@ header h1:hover {
 nav {
 	display: flex;
 	gap: 20px;
+	margin-right: 10px;
 }
 
 nav a {
@@ -397,7 +398,7 @@ h1.secao {
 
 .content-tecnologias .comentario p {
 	text-indent: 5%;
-  margin-top: 6px;
+	margin-top: 6px;
 }
 
 bold {
